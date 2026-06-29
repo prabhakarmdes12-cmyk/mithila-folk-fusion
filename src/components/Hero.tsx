@@ -17,15 +17,8 @@ const Hero: React.FC<HeroProps> = ({ isPlaying }) => {
       <div className="absolute inset-0 overflow-hidden">
         <video
           autoPlay muted loop playsInline
-          className="absolute"
-          style={{
-            width: '100vmax',
-            height: '100vmax',
-            transform: 'translate(-50%, -50%) rotate(90deg)',
-            top: '50%',
-            left: '50%',
-            objectFit: 'cover',
-          }}
+          className="absolute w-full h-full"
+          style={{ objectFit: 'cover' }}
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
