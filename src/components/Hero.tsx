@@ -17,12 +17,13 @@ const Hero: React.FC<HeroProps> = ({ isPlaying }) => {
       <div className="absolute inset-0 overflow-hidden">
         <video
           autoPlay muted loop playsInline
-          className="absolute min-w-full min-h-full"
+          className="absolute"
           style={{
-            transform: 'translate(-50%, -50%) rotate(90deg) scale(1.5)',
+            width: '100vmax',
+            height: '100vmax',
+            transform: 'translate(-50%, -50%) rotate(90deg)',
             top: '50%',
             left: '50%',
-            position: 'absolute',
             objectFit: 'cover',
           }}
         >
