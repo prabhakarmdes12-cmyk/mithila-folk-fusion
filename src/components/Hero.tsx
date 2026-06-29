@@ -12,14 +12,14 @@ const Hero: React.FC<HeroProps> = ({ isPlaying }) => {
   const heroLogoOpacity = useTransform(scrollY, [0, 200], [1, 0]);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
       {/* Background video with overlay */}
       <div className="absolute inset-0 overflow-hidden">
         <video
           autoPlay muted loop playsInline
           className="absolute min-w-full min-h-full"
           style={{
-            transform: 'translate(-50%, -50%) rotate(90deg) scale(1.5)',
+            transform: 'translate(-50%, -50%) rotate(90deg) scale(1.6)',
             top: '50%',
             left: '50%',
             position: 'absolute',
