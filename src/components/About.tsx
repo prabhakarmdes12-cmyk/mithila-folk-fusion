@@ -75,8 +75,8 @@ const About: React.FC = () => {
               className="md:col-span-5"
             >
               <div className="relative w-full">
-                <div className="absolute -inset-8 border-2 border-madhubani-red/30" />
-                <div className="absolute -inset-4 border border-madhubani-yellow/40" />
+                <div className="absolute -inset-6 border-2 border-madhubani-red/30" />
+                <div className="absolute -inset-3 border border-madhubani-yellow/40" />
                 
                 <svg className="absolute -top-10 -left-10 z-10" width="56" height="56" viewBox="0 0 56 56">
                   <path d="M0,28 Q0,0 28,0" fill="none" stroke="#8B1A1A" strokeWidth="2"/>
@@ -99,7 +99,7 @@ const About: React.FC = () => {
                   <path d="M8,20 Q8,8 20,8" fill="none" stroke="#C41E7F" strokeWidth="1.5"/>
                 </svg>
 
-                <div className="w-full bg-madhubani-black overflow-hidden" style={{ aspectRatio: '3/4' }}>
+                <div className="w-full bg-madhubani-black overflow-hidden" style={{ aspectRatio: '4/5' }}>
                   {slides.map((slide, i) => (
                     <div
                       key={i}
@@ -156,15 +156,15 @@ const About: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="md:col-span-7 text-left space-y-6 max-w-2xl"
+              className="md:col-span-7 text-left space-y-8 md:space-y-10 max-w-2xl"
             >
-              <p className="font-cormorant text-xl md:text-2xl text-madhubani-black/80 leading-relaxed">
-                <span className="font-playfair text-3xl md:text-4xl text-madhubani-red font-semibold italic">Shivangi Singh</span> 
+              <p className="font-cormorant text-2xl md:text-3xl text-madhubani-black/80 leading-relaxed">
+                <span className="font-playfair text-4xl md:text-5xl text-madhubani-red font-semibold italic">Shivangi Singh</span> 
                 {' '}is an Indian American contemporary Mithila (Madhubani) folk artist based in New Jersey, working under the name <strong className="text-madhubani-teal">MithilaFolkFusions</strong>. 
                 Originally from the Mithilanchal region of India and raised in Jharkhand, she brings a strong cultural foundation to her practice, blending traditional storytelling with contemporary themes that speak to global audiences.
               </p>
 
-              <p className="font-cormorant text-lg md:text-xl text-madhubani-black/70 leading-relaxed">
+              <p className="font-cormorant text-xl md:text-2xl text-madhubani-black/70 leading-relaxed">
                 Her work is rooted in classical Mithila styles such as Kachni, Bharni, and Godna, while also expanding into experimental compositions on handmade paper using fine nib work and acrylics. 
                 Through her art, she explores identity, migration, women's narratives, ecology, and climate resilience—transforming folk visual language into a powerful medium for cultural dialogue and social reflection.
               </p>
