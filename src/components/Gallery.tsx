@@ -269,6 +269,8 @@ const Gallery: React.FC = () => {
                       <img
                         src={artwork.src}
                         alt={artwork.title}
+                        draggable="false"
+                        onDragStart={(e) => e.preventDefault()}
                         className="w-full h-80 md:h-96 object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-105"
                       />
 
@@ -358,6 +360,8 @@ const Gallery: React.FC = () => {
                   <img
                     src={item.src}
                     alt="Sold painting"
+                    draggable="false"
+                    onDragStart={(e) => e.preventDefault()}
                     className="w-full h-48 md:h-64 object-cover opacity-60 grayscale transition-all duration-500 group-hover:opacity-80 group-hover:grayscale-0"
                   />
                   <div className="absolute inset-0 bg-madhubani-black/40 flex items-center justify-center">
@@ -401,6 +405,8 @@ const Gallery: React.FC = () => {
                 <img
                   src={selectedArt.src}
                   alt={selectedArt.title}
+                  draggable="false"
+                  onDragStart={(e) => e.preventDefault()}
                   className="w-full h-64 md:h-full object-cover"
                 />
                 <div className="p-6 md:p-8 flex flex-col justify-center">

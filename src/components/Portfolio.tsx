@@ -154,6 +154,8 @@ const Portfolio: React.FC = () => {
                       <img
                         src={work.src}
                         alt={work.title}
+                        draggable="false"
+                        onDragStart={(e) => e.preventDefault()}
                         className="w-full h-[28rem] md:h-[36rem] object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                       />
 

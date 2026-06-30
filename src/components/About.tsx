@@ -161,17 +161,27 @@ const About: React.FC = () => {
 
             <p className="font-cormorant text-lg text-madhubani-black/70 leading-relaxed">
               Her work is rooted in classical Mithila styles such as Kachni, Bharni, and Godna, while also expanding into experimental compositions on handmade paper using fine nib work and acrylics. 
-              Through her art, she explores identity, migration, women's narratives, ecology, and climate resilience — transforming folk visual language into a powerful medium for cultural dialogue and social reflection.
+              Through her art, she explores identity, migration, women's narratives, ecology, and climate resilience—transforming folk visual language into a powerful medium for cultural dialogue and social reflection.
             </p>
 
             <p className="font-cormorant text-lg text-madhubani-black/70 leading-relaxed">
-              Shivangi's work has been exhibited on prominent national and international platforms including the 
-              <strong className="text-madhubani-red"> United Nations Headquarters</strong>, 
-              <strong className="text-madhubani-red"> Gracie Mansion</strong>, 
-              <strong className="text-madhubani-red"> Times Square</strong>, 
-              <strong className="text-madhubani-red"> FDNY Headquarters</strong>, and the 
-              <strong className="text-madhubani-red"> EU Headquarters in Brussels (2026)</strong>. 
-              She has been recognized as a Women Entrepreneur in the Arts by the Greater New York Chamber of Commerce and listed among the Top 35 Indian American Art Influencers by Feedspot (2025).
+              Shivangi's work has been exhibited and recognized on prominent national and international platforms. Selected highlights include exhibitions at the United Nations Headquarters, New York, cultural showcases at Gracie Mansion, NYC, and public art visibility in Times Square and Madison Avenue events. She has also presented work at the FDNY Headquarters (NYC) and participated in curated exhibitions across New Jersey, including the Watchung Art Center ("Magnetism" exhibition) and Manville Art Council exhibitions.
+            </p>
+
+            <p className="font-cormorant text-lg text-madhubani-black/70 leading-relaxed">
+              In 2026, her work was featured at the EU Headquarters in Brussels, further strengthening her international presence as a cultural ambassador of Mithila art. She has also been actively involved with the Mithila Center USA "Art for SDGs" exhibition series, contributing to global conversations around sustainability, heritage, and cultural preservation.
+            </p>
+
+            <p className="font-cormorant text-lg text-madhubani-black/70 leading-relaxed">
+              Her community engagement includes large-scale educational outreach, most notably a Mithila folk art workshop at the UCNJ Teen Arts Festival (Union College of Union County, NJ), where she introduced traditional art forms to over a thousand students, fostering cultural appreciation among youth.
+            </p>
+
+            <p className="font-cormorant text-lg text-madhubani-black/70 leading-relaxed">
+              Shivangi Singh has been recognized as a Women Entrepreneur in the Arts by the Greater New York Chamber of Commerce and listed among the Top 35 Indian American Art Influencers by Feedspot (2025). Her work continues to be acknowledged for its cultural depth, narrative strength, and contemporary relevance.
+            </p>
+
+            <p className="font-cormorant text-lg text-madhubani-black/70 leading-relaxed">
+              Through MithilaFolkFusions, she continues to preserve and evolve Mithila heritage bridging tradition and modernity while amplifying community voices through art.
             </p>
 
             {/* Stats */}
