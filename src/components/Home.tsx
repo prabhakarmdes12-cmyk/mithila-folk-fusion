@@ -10,7 +10,6 @@ import Testimonials from './Testimonials';
 import Commission from './Commission';
 import Contact from './Contact';
 import Footer from './Footer';
-import { MadhubaniBorderTop } from './MadhubaniBorder';
 
 const Home: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -34,7 +33,6 @@ const Home: React.FC = () => {
 
       <Navbar isPlaying={isPlaying} togglePlay={togglePlay} />
       <Hero isPlaying={isPlaying} togglePlay={togglePlay} />
-      <MadhubaniBorderTop />
       <About />
       <Gallery />
       <ArtForm />

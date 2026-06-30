@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { MadhubaniBorderTop } from './MadhubaniBorder';
 
 interface HeroProps {
   isPlaying: boolean;
@@ -28,7 +29,7 @@ const Hero: React.FC<HeroProps> = ({ isPlaying }) => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Background video with overlay */}
       <div className="absolute inset-0 overflow-hidden">
         <video
@@ -145,7 +146,7 @@ const Hero: React.FC<HeroProps> = ({ isPlaying }) => {
         {/* Scroll-aware Logo with music player integration */}
         <motion.div
           style={{ scale: heroLogoScale, opacity: heroLogoOpacity }}
-          className="flex justify-center mb-8 md:mb-12 relative"
+          className="flex justify-center mb-6 md:mb-10 relative"
         >
           <div className="relative">
             <motion.img
@@ -191,7 +192,7 @@ const Hero: React.FC<HeroProps> = ({ isPlaying }) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="flex flex-col items-center mb-6"
+          className="flex flex-col items-center mb-4"
         >
           <h1 className="font-cinzel text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-cream leading-tight whitespace-nowrap">
             Mithila{' '}
@@ -209,7 +210,7 @@ const Hero: React.FC<HeroProps> = ({ isPlaying }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="font-playfair text-cream/90 text-lg md:text-2xl italic mb-4"
+          className="font-playfair text-cream/90 text-lg md:text-2xl italic mb-2 md:mb-3"
         >
           by <span className="text-madhubani-yellow font-semibold not-italic">Shivangi Singh</span>
         </motion.p>
@@ -218,7 +219,7 @@ const Hero: React.FC<HeroProps> = ({ isPlaying }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.3, duration: 1 }}
-          className="font-cormorant text-base md:text-2xl text-cream/80 max-w-2xl mx-auto mb-6 md:mb-10 leading-relaxed bg-madhubani-black/60 backdrop-blur-sm rounded-lg px-4 py-3 md:px-6 md:py-4"
+          className="font-cormorant text-base md:text-2xl text-cream/80 max-w-2xl mx-auto mb-4 md:mb-8 leading-relaxed bg-madhubani-black/60 backdrop-blur-sm rounded-lg px-4 py-3 md:px-6 md:py-4"
         >
           Where ancient Mithila traditions dance with contemporary vision — 
           each stroke a story, each color a celebration of Bihar's timeless heritage
@@ -252,7 +253,7 @@ const Hero: React.FC<HeroProps> = ({ isPlaying }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2.2 }}
-          className="flex justify-center mt-4 md:mt-8"
+          className="flex justify-center mt-3 md:mt-6"
         >
           <motion.div
             animate={{ y: [0, 8, 0] }}
@@ -267,6 +268,8 @@ const Hero: React.FC<HeroProps> = ({ isPlaying }) => {
           </motion.div>
         </motion.div>
       </div>
+
+      <MadhubaniBorderTop />
     </section>
   );
 };
