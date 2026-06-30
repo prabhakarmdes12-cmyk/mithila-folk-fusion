@@ -111,7 +111,7 @@ const Portfolio: React.FC = () => {
           </motion.div>
 
           {/* Single column portfolio */}
-          <div className="space-y-24 md:space-y-32">
+          <div className="space-y-20 md:space-y-28">
             {portfolioWorks.map((work, index) => {
               const isEven = index % 2 === 0;
               return (
@@ -124,32 +124,32 @@ const Portfolio: React.FC = () => {
                   className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center`}
                 >
                   {/* Image */}
-                  <div className="w-full md:w-3/5">
+                  <div className="w-full md:w-2/3">
                     <div className="relative group">
                       {/* Decorative frame */}
-                      <div className="absolute -inset-3 border border-madhubani-red/15 pointer-events-none" />
-                      <div className="absolute -inset-1.5 border border-madhubani-yellow/20 pointer-events-none" />
+                      <div className="absolute -inset-4 border border-madhubani-red/15 pointer-events-none" />
+                      <div className="absolute -inset-2 border border-madhubani-yellow/20 pointer-events-none" />
 
                       {/* Corner ornaments */}
-                      <svg className="absolute -top-4 -left-4 z-10 pointer-events-none" width="32" height="32" viewBox="0 0 32 32">
-                        <path d="M0,16 Q0,0 16,0" fill="none" stroke="#8B1A1A" strokeWidth="1.5"/>
-                        <circle cx="3" cy="3" r="2.5" fill="#E8A317"/>
-                        <path d="M5,12 Q5,5 12,5" fill="none" stroke="#C41E7F" strokeWidth="1"/>
+                      <svg className="absolute -top-5 -left-5 z-10 pointer-events-none" width="40" height="40" viewBox="0 0 40 40">
+                        <path d="M0,20 Q0,0 20,0" fill="none" stroke="#8B1A1A" strokeWidth="1.5"/>
+                        <circle cx="4" cy="4" r="3" fill="#E8A317"/>
+                        <path d="M6,14 Q6,6 14,6" fill="none" stroke="#C41E7F" strokeWidth="1"/>
                       </svg>
-                      <svg className="absolute -top-4 -right-4 z-10 pointer-events-none" width="32" height="32" viewBox="0 0 32 32" style={{ transform: 'scaleX(-1)' }}>
-                        <path d="M0,16 Q0,0 16,0" fill="none" stroke="#8B1A1A" strokeWidth="1.5"/>
-                        <circle cx="3" cy="3" r="2.5" fill="#E8A317"/>
-                        <path d="M5,12 Q5,5 12,5" fill="none" stroke="#C41E7F" strokeWidth="1"/>
+                      <svg className="absolute -top-5 -right-5 z-10 pointer-events-none" width="40" height="40" viewBox="0 0 40 40" style={{ transform: 'scaleX(-1)' }}>
+                        <path d="M0,20 Q0,0 20,0" fill="none" stroke="#8B1A1A" strokeWidth="1.5"/>
+                        <circle cx="4" cy="4" r="3" fill="#E8A317"/>
+                        <path d="M6,14 Q6,6 14,6" fill="none" stroke="#C41E7F" strokeWidth="1"/>
                       </svg>
-                      <svg className="absolute -bottom-4 -left-4 z-10 pointer-events-none" width="32" height="32" viewBox="0 0 32 32" style={{ transform: 'scaleY(-1)' }}>
-                        <path d="M0,16 Q0,0 16,0" fill="none" stroke="#8B1A1A" strokeWidth="1.5"/>
-                        <circle cx="3" cy="3" r="2.5" fill="#E8A317"/>
-                        <path d="M5,12 Q5,5 12,5" fill="none" stroke="#C41E7F" strokeWidth="1"/>
+                      <svg className="absolute -bottom-5 -left-5 z-10 pointer-events-none" width="40" height="40" viewBox="0 0 40 40" style={{ transform: 'scaleY(-1)' }}>
+                        <path d="M0,20 Q0,0 20,0" fill="none" stroke="#8B1A1A" strokeWidth="1.5"/>
+                        <circle cx="4" cy="4" r="3" fill="#E8A317"/>
+                        <path d="M6,14 Q6,6 14,6" fill="none" stroke="#C41E7F" strokeWidth="1"/>
                       </svg>
-                      <svg className="absolute -bottom-4 -right-4 z-10 pointer-events-none" width="32" height="32" viewBox="0 0 32 32" style={{ transform: 'scale(-1)' }}>
-                        <path d="M0,16 Q0,0 16,0" fill="none" stroke="#8B1A1A" strokeWidth="1.5"/>
-                        <circle cx="3" cy="3" r="2.5" fill="#E8A317"/>
-                        <path d="M5,12 Q5,5 12,5" fill="none" stroke="#C41E7F" strokeWidth="1"/>
+                      <svg className="absolute -bottom-5 -right-5 z-10 pointer-events-none" width="40" height="40" viewBox="0 0 40 40" style={{ transform: 'scale(-1)' }}>
+                        <path d="M0,20 Q0,0 20,0" fill="none" stroke="#8B1A1A" strokeWidth="1.5"/>
+                        <circle cx="4" cy="4" r="3" fill="#E8A317"/>
+                        <path d="M6,14 Q6,6 14,6" fill="none" stroke="#C41E7F" strokeWidth="1"/>
                       </svg>
 
                       <CameraShy mode="blur" blur="20px" sensitivity="balanced">
@@ -158,7 +158,7 @@ const Portfolio: React.FC = () => {
                         alt={work.title}
                         draggable="false"
                         onDragStart={(e) => e.preventDefault()}
-                        className="w-full h-[28rem] md:h-[36rem] object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                        className="w-full h-[32rem] md:h-[42rem] object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                       />
                       </CameraShy>
 
@@ -168,7 +168,7 @@ const Portfolio: React.FC = () => {
                   </div>
 
                   {/* Text content */}
-                  <div className={`w-full md:w-2/5 ${isEven ? 'md:pl-4' : 'md:pr-4'}`}>
+                  <div className={`w-full md:w-1/3 ${isEven ? 'md:pl-4' : 'md:pr-4'}`}>
                     <div className="space-y-6">
                       {/* Category */}
                       <span className="inline-block font-playfair text-xs tracking-[0.3em] uppercase text-madhubani-magenta border border-madhubani-magenta/30 px-3 py-1">

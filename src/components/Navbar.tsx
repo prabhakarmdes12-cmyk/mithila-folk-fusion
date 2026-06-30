@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Menu, X, Play, Pause } from 'lucide-react';
@@ -22,9 +22,20 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ isPlaying, togglePlay }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const prevScrollY = useRef(0);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    const handleScroll = () => {
+      const currentY = window.scrollY;
+      setIsScrolled(currentY > 50);
+      if (currentY > prevScrollY.current && currentY > 100) {
+        setVisible(false);
+      } else {
+        setVisible(true);
+      }
+      prevScrollY.current = currentY;
+    };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -33,8 +44,8 @@ const Navbar: React.FC<NavbarProps> = ({ isPlaying, togglePlay }) => {
     <>
       <motion.nav
         initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
+        animate={{ y: visible ? 0 : -100 }}
+        transition={{ duration: 0.3, ease: 'easeInOut' }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
             ? 'bg-cream/95 backdrop-blur-md shadow-lg border-b-2 border-madhubani-red'

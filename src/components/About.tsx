@@ -36,7 +36,7 @@ const About: React.FC = () => {
     startTimer();
   };
   return (
-    <section id="about" className="relative py-28 md:py-44 bg-cream overflow-hidden">
+    <section id="about" className="relative py-20 md:py-32 bg-cream overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 rangoli-bg opacity-50" />
       
@@ -51,7 +51,7 @@ const About: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
           <span className="text-madhubani-magenta font-cormorant text-lg tracking-[0.4em] uppercase">The Artist</span>
           <h2 className="font-cinzel text-3xl md:text-5xl text-madhubani-black mt-3 mb-4">
@@ -65,38 +65,38 @@ const About: React.FC = () => {
 
         <div className="space-y-16">
           {/* Side-by-side: slideshow + bio intro */}
-          <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-start max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-start">
             {/* Left: Slideshow — col-span-2 */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="md:col-span-2"
+              className="md:col-span-5"
             >
-              <div className="relative w-full max-w-md mx-auto md:max-w-none">
-                <div className="absolute -inset-4 border-2 border-madhubani-red/30" />
-                <div className="absolute -inset-2 border border-madhubani-yellow/40" />
+              <div className="relative w-full">
+                <div className="absolute -inset-8 border-2 border-madhubani-red/30" />
+                <div className="absolute -inset-4 border border-madhubani-yellow/40" />
                 
-                <svg className="absolute -top-6 -left-6 z-10" width="40" height="40" viewBox="0 0 40 40">
-                  <path d="M0,20 Q0,0 20,0" fill="none" stroke="#8B1A1A" strokeWidth="2"/>
-                  <circle cx="4" cy="4" r="3" fill="#E8A317"/>
-                  <path d="M5,15 Q5,5 15,5" fill="none" stroke="#C41E7F" strokeWidth="1.5"/>
+                <svg className="absolute -top-10 -left-10 z-10" width="56" height="56" viewBox="0 0 56 56">
+                  <path d="M0,28 Q0,0 28,0" fill="none" stroke="#8B1A1A" strokeWidth="2"/>
+                  <circle cx="6" cy="6" r="4" fill="#E8A317"/>
+                  <path d="M8,20 Q8,8 20,8" fill="none" stroke="#C41E7F" strokeWidth="1.5"/>
                 </svg>
-                <svg className="absolute -top-6 -right-6 z-10" width="40" height="40" viewBox="0 0 40 40" style={{ transform: 'scaleX(-1)' }}>
-                  <path d="M0,20 Q0,0 20,0" fill="none" stroke="#8B1A1A" strokeWidth="2"/>
-                  <circle cx="4" cy="4" r="3" fill="#E8A317"/>
-                  <path d="M5,15 Q5,5 15,5" fill="none" stroke="#C41E7F" strokeWidth="1.5"/>
+                <svg className="absolute -top-10 -right-10 z-10" width="56" height="56" viewBox="0 0 56 56" style={{ transform: 'scaleX(-1)' }}>
+                  <path d="M0,28 Q0,0 28,0" fill="none" stroke="#8B1A1A" strokeWidth="2"/>
+                  <circle cx="6" cy="6" r="4" fill="#E8A317"/>
+                  <path d="M8,20 Q8,8 20,8" fill="none" stroke="#C41E7F" strokeWidth="1.5"/>
                 </svg>
-                <svg className="absolute -bottom-6 -left-6 z-10" width="40" height="40" viewBox="0 0 40 40" style={{ transform: 'scaleY(-1)' }}>
-                  <path d="M0,20 Q0,0 20,0" fill="none" stroke="#8B1A1A" strokeWidth="2"/>
-                  <circle cx="4" cy="4" r="3" fill="#E8A317"/>
-                  <path d="M5,15 Q5,5 15,5" fill="none" stroke="#C41E7F" strokeWidth="1.5"/>
+                <svg className="absolute -bottom-10 -left-10 z-10" width="56" height="56" viewBox="0 0 56 56" style={{ transform: 'scaleY(-1)' }}>
+                  <path d="M0,28 Q0,0 28,0" fill="none" stroke="#8B1A1A" strokeWidth="2"/>
+                  <circle cx="6" cy="6" r="4" fill="#E8A317"/>
+                  <path d="M8,20 Q8,8 20,8" fill="none" stroke="#C41E7F" strokeWidth="1.5"/>
                 </svg>
-                <svg className="absolute -bottom-6 -right-6 z-10" width="40" height="40" viewBox="0 0 40 40" style={{ transform: 'scale(-1)' }}>
-                  <path d="M0,20 Q0,0 20,0" fill="none" stroke="#8B1A1A" strokeWidth="2"/>
-                  <circle cx="4" cy="4" r="3" fill="#E8A317"/>
-                  <path d="M5,15 Q5,5 15,5" fill="none" stroke="#C41E7F" strokeWidth="1.5"/>
+                <svg className="absolute -bottom-10 -right-10 z-10" width="56" height="56" viewBox="0 0 56 56" style={{ transform: 'scale(-1)' }}>
+                  <path d="M0,28 Q0,0 28,0" fill="none" stroke="#8B1A1A" strokeWidth="2"/>
+                  <circle cx="6" cy="6" r="4" fill="#E8A317"/>
+                  <path d="M8,20 Q8,8 20,8" fill="none" stroke="#C41E7F" strokeWidth="1.5"/>
                 </svg>
 
                 <div className="w-full bg-madhubani-black overflow-hidden" style={{ aspectRatio: '3/4' }}>
@@ -130,12 +130,12 @@ const About: React.FC = () => {
                 
                 <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-madhubani-black/40 to-transparent" />
                 
-                <div className="absolute bottom-4 left-4 right-4 bg-cream/90 backdrop-blur-sm p-3 border border-madhubani-red/30 text-center">
-                  <p className="font-cinzel text-madhubani-red text-sm tracking-wider">Shivangi Vatsya Singh</p>
-                  <p className="font-cormorant text-madhubani-teal text-xs tracking-widest uppercase">Mithila Folk Artist</p>
+                <div className="absolute bottom-4 left-4 right-4 bg-cream/90 backdrop-blur-sm p-4 border border-madhubani-red/30 text-center">
+                  <p className="font-cinzel text-madhubani-red text-base tracking-wider">Shivangi Vatsya Singh</p>
+                  <p className="font-cormorant text-madhubani-teal text-sm tracking-widest uppercase">Mithila Folk Artist</p>
                 </div>
 
-                <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                <div className="absolute bottom-24 left-1/2 -translate-x-1/2 flex gap-2 z-10">
                   {slides.map((_, i) => (
                     <button
                       key={i}
@@ -150,21 +150,21 @@ const About: React.FC = () => {
               </div>
             </motion.div>
 
-            {/* Right: Opening bios — col-span-3 */}
+            {/* Right: Opening bios — col-span-7 */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="md:col-span-3 text-left space-y-6 md:pt-8"
+              className="md:col-span-7 text-left space-y-6"
             >
-              <p className="font-cormorant text-lg md:text-xl text-madhubani-black/80 leading-relaxed">
-                <span className="font-playfair text-2xl md:text-3xl text-madhubani-red font-semibold italic">Shivangi Singh</span> 
+              <p className="font-cormorant text-xl md:text-2xl text-madhubani-black/80 leading-relaxed">
+                <span className="font-playfair text-3xl md:text-4xl text-madhubani-red font-semibold italic">Shivangi Singh</span> 
                 {' '}is an Indian American contemporary Mithila (Madhubani) folk artist based in New Jersey, working under the name <strong className="text-madhubani-teal">MithilaFolkFusions</strong>. 
                 Originally from the Mithilanchal region of India and raised in Jharkhand, she brings a strong cultural foundation to her practice, blending traditional storytelling with contemporary themes that speak to global audiences.
               </p>
 
-              <p className="font-cormorant text-lg text-madhubani-black/70 leading-relaxed">
+              <p className="font-cormorant text-lg md:text-xl text-madhubani-black/70 leading-relaxed">
                 Her work is rooted in classical Mithila styles such as Kachni, Bharni, and Godna, while also expanding into experimental compositions on handmade paper using fine nib work and acrylics. 
                 Through her art, she explores identity, migration, women's narratives, ecology, and climate resilience—transforming folk visual language into a powerful medium for cultural dialogue and social reflection.
               </p>
