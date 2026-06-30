@@ -65,14 +65,14 @@ const About: React.FC = () => {
 
         <div className="space-y-16">
           {/* Side-by-side: slideshow + bio intro */}
-          <div className="grid md:grid-cols-12 gap-8 md:gap-10 items-start">
-            {/* Left: Slideshow — col-span-2 */}
+          <div className="grid md:grid-cols-12 gap-6 md:gap-8 items-start">
+            {/* Left: Slideshow — col-span-5 */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="md:col-span-6"
+              className="md:col-span-5"
             >
               <div className="relative w-full max-w-[90%] mx-auto">
                 <div className="absolute -inset-6 border-2 border-madhubani-red/30" />
@@ -158,7 +158,7 @@ const About: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="md:col-span-6 text-left space-y-8 md:space-y-10 max-w-3xl"
+              className="md:col-span-7 text-left space-y-8 md:space-y-10 max-w-3xl"
             >
               <p className="font-cormorant text-2xl md:text-3xl text-madhubani-black/80 leading-relaxed">
                 <span className="font-playfair text-4xl md:text-5xl text-madhubani-red font-semibold italic">Shivangi Singh</span> 

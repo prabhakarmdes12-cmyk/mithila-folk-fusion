@@ -269,7 +269,9 @@ const Hero: React.FC<HeroProps> = ({ isPlaying }) => {
         </motion.div>
       </div>
 
-      <MadhubaniBorderTop />
+      <div className="relative z-10 w-full">
+        <MadhubaniBorderTop />
+      </div>
     </section>
   );
 };
