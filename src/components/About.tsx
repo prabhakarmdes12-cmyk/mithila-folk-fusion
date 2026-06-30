@@ -65,14 +65,14 @@ const About: React.FC = () => {
 
         <div className="space-y-16">
           {/* Side-by-side: slideshow + bio intro */}
-          <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-start">
+          <div className="grid md:grid-cols-12 gap-8 md:gap-10 items-start">
             {/* Left: Slideshow — col-span-2 */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="md:col-span-5"
+              className="md:col-span-6"
             >
               <div className="relative w-full max-w-[90%] mx-auto">
                 <div className="absolute -inset-6 border-2 border-madhubani-red/30" />
@@ -158,7 +158,7 @@ const About: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="md:col-span-7 text-left space-y-8 md:space-y-10 max-w-2xl"
+              className="md:col-span-6 text-left space-y-8 md:space-y-10 max-w-3xl"
             >
               <p className="font-cormorant text-2xl md:text-3xl text-madhubani-black/80 leading-relaxed">
                 <span className="font-playfair text-4xl md:text-5xl text-madhubani-red font-semibold italic">Shivangi Singh</span> 
@@ -181,7 +181,7 @@ const About: React.FC = () => {
                 Achievements & <span className="text-madhubani-red">Recognition</span>
               </h3>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-6">
               {[
                 { icon: Globe, label: 'United Nations', detail: 'Exhibition, New York', desc: 'Exhibited Mithila folk art at the United Nations Headquarters, showcasing cultural heritage on an international diplomatic platform.' },
                 { icon: Landmark, label: 'EU Headquarters', detail: 'Brussels, 2026', desc: 'Featured at the EU Headquarters in Brussels, strengthening international presence as a cultural ambassador of Mithila art.' },
@@ -195,27 +195,73 @@ const About: React.FC = () => {
                 { icon: Award, label: 'Women Entrepreneur', detail: 'Greater NY Chamber of Commerce', desc: 'Recognized as a Women Entrepreneur in the Arts by the Greater New York Chamber of Commerce.' },
                 { icon: Star, label: 'Top 35 Art Influencer', detail: 'Feedspot, 2025', desc: 'Listed among the Top 35 Indian American Art Influencers by Feedspot (2025).' },
               ].map((item, i) => {
+                const isBig = i < 2;
                 const Icon = item.icon;
-                return (
+                return isBig ? (
                   <motion.div
                     key={i}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: i * 0.05 }}
-                    className="flip-card group/flip h-56 md:h-64"
+                    className="flip-card group/flip md:col-span-6 h-64 md:h-80"
+                    tabIndex={0}
+                  >
+                    <div className="flip-card-inner w-full h-full relative">
+                      <div className="flip-card-front absolute inset-0 bg-cream-light p-6 md:p-8 transition-colors duration-300 flex flex-col items-center justify-center text-center gap-4">
+                        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-madhubani-red via-madhubani-magenta to-madhubani-teal" />
+                        <div className="absolute inset-2 border border-madhubani-red/25 pointer-events-none" />
+                        <div className="absolute inset-4 border border-madhubani-yellow/30 pointer-events-none" />
+                        <svg className="absolute -top-1 -left-1 z-10 pointer-events-none" width="32" height="32" viewBox="0 0 32 32">
+                          <path d="M0,16 Q0,0 16,0" fill="none" stroke="#8B1A1A" strokeWidth="2"/>
+                          <circle cx="3" cy="3" r="3" fill="#E8A317"/>
+                          <path d="M4,12 Q4,4 12,4" fill="none" stroke="#C41E7F" strokeWidth="1.5"/>
+                        </svg>
+                        <svg className="absolute -top-1 -right-1 z-10 pointer-events-none" width="32" height="32" viewBox="0 0 32 32" style={{ transform: 'scaleX(-1)' }}>
+                          <path d="M0,16 Q0,0 16,0" fill="none" stroke="#8B1A1A" strokeWidth="2"/>
+                          <circle cx="3" cy="3" r="3" fill="#E8A317"/>
+                          <path d="M4,12 Q4,4 12,4" fill="none" stroke="#C41E7F" strokeWidth="1.5"/>
+                        </svg>
+                        <svg className="absolute -bottom-1 -left-1 z-10 pointer-events-none" width="32" height="32" viewBox="0 0 32 32" style={{ transform: 'scaleY(-1)' }}>
+                          <path d="M0,16 Q0,0 16,0" fill="none" stroke="#8B1A1A" strokeWidth="2"/>
+                          <circle cx="3" cy="3" r="3" fill="#E8A317"/>
+                          <path d="M4,12 Q4,4 12,4" fill="none" stroke="#C41E7F" strokeWidth="1.5"/>
+                        </svg>
+                        <svg className="absolute -bottom-1 -right-1 z-10 pointer-events-none" width="32" height="32" viewBox="0 0 32 32" style={{ transform: 'scale(-1)' }}>
+                          <path d="M0,16 Q0,0 16,0" fill="none" stroke="#8B1A1A" strokeWidth="2"/>
+                          <circle cx="3" cy="3" r="3" fill="#E8A317"/>
+                          <path d="M4,12 Q4,4 12,4" fill="none" stroke="#C41E7F" strokeWidth="1.5"/>
+                        </svg>
+                        <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center bg-madhubani-red/10 text-madhubani-red group-hover/flip:bg-madhubani-red group-hover/flip:text-cream transition-all duration-300 mt-2">
+                          <Icon size={32} />
+                        </div>
+                        <div>
+                          <p className="font-playfair text-lg md:text-xl text-madhubani-black font-semibold leading-tight">{item.label}</p>
+                          <p className="font-cormorant text-base md:text-lg text-madhubani-teal mt-1">{item.detail}</p>
+                        </div>
+                        <span className="font-cormorant text-xs md:text-sm text-madhubani-red/50 tracking-wider uppercase">Hover to explore</span>
+                      </div>
+                      <div className="flip-card-back absolute inset-0 bg-madhubani-red text-cream p-6 md:p-8 flex flex-col items-center justify-center text-center gap-3">
+                        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-madhubani-yellow via-cream to-madhubani-yellow opacity-60" />
+                        <p className="font-cormorant text-base md:text-lg leading-relaxed">{item.desc}</p>
+                      </div>
+                    </div>
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: i * 0.05 }}
+                    className="flip-card group/flip md:col-span-4 h-56 md:h-64"
                     tabIndex={0}
                   >
                     <div className="flip-card-inner w-full h-full relative">
                       <div className="flip-card-front absolute inset-0 bg-cream-light p-5 md:p-6 transition-colors duration-300 flex flex-col items-center justify-center text-center gap-3">
-                        {/* Gradient top bar */}
                         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-madhubani-red via-madhubani-magenta to-madhubani-teal" />
-
-                        {/* Outer decorative border */}
                         <div className="absolute inset-2 border border-madhubani-red/20 pointer-events-none" />
                         <div className="absolute inset-3 border border-madhubani-yellow/20 pointer-events-none" />
-
-                        {/* Corner lotuses */}
                         <svg className="absolute -top-1 -left-1 z-10 pointer-events-none" width="24" height="24" viewBox="0 0 24 24">
                           <path d="M0,12 Q0,0 12,0" fill="none" stroke="#8B1A1A" strokeWidth="1.5"/>
                           <circle cx="2" cy="2" r="2" fill="#E8A317"/>
@@ -236,7 +282,6 @@ const About: React.FC = () => {
                           <circle cx="2" cy="2" r="2" fill="#E8A317"/>
                           <path d="M3,9 Q3,3 9,3" fill="none" stroke="#C41E7F" strokeWidth="1"/>
                         </svg>
-
                         <div className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center bg-madhubani-red/10 text-madhubani-red group-hover/flip:bg-madhubani-red group-hover/flip:text-cream transition-all duration-300 mt-3">
                           <Icon size={26} />
                         </div>
