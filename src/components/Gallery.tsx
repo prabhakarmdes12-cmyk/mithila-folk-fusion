@@ -12,7 +12,7 @@ const artworks = [
     title: 'Resonance',
     category: 'Environment & Identity',
     description: 'A powerful visual dialogue between two contrasting realities of the Earth through a single female face, symbolically connected to the planet itself. One half represents a polluted world; the other reveals a thriving, pollution free world with lush forests and lotus flowers.',
-    medium: 'Mithila Folk Art',
+    medium: 'Mithila Folk Art, acrylic on handmade canvas/paper',
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const artworks = [
     title: 'Bodhi Udaya',
     category: 'Spirituality',
     description: 'A contemplative interpretation of Lord Buddha\'s enlightenment beneath the sacred Bodhi tree, expressed through traditional Mithila folk art with intricate Kachni, Bharni, and Godna motifs and mandala inspired arches.',
-    medium: 'Mithila Folk Art',
+    medium: 'Mithila Folk Art, acrylic on handmade canvas/paper',
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const artworks = [
     title: 'Mythocircle',
     category: 'Mythology & Folklore',
     description: 'A Godna inspired artwork bringing together mythology, nature, and symbolic geometry. A turtle with concentric circular patterns carries the figure of Raja Sahlesh, a vessel of Mithila\'s oral history and heroic folklore.',
-    medium: 'Godna Art',
+    medium: 'Godna Art, acrylic on handmade canvas/paper',
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const artworks = [
     title: 'Echoes Beneath the Branches',
     category: 'Nature & Community',
     description: 'Created in black and white, this painting explores home as a shared and living experience. A majestic tree transformed into a sanctuary of birdhouses, with a tranquil pond, swimming ducks, and blooming lotuses.',
-    medium: 'Mithila Folk Art, Black & White',
+    medium: 'Mithila Folk Art, Black & White, acrylic on handmade canvas/paper',
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const artworks = [
     title: 'One Earth, Many Voices',
     category: 'Climate & Culture',
     description: 'A Mithila inspired mandala representing Earth as the shared home of humanity. International flags reflect that climate change knows no borders. Traditional motifs represent biodiversity and the balance between humans and nature.',
-    medium: 'Mithila Folk Art',
+    medium: 'Mithila Folk Art, acrylic on handmade canvas/paper',
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ const artworks = [
     title: 'Echoes of Exile',
     category: 'Mythology & Heritage',
     description: 'Based on the Ramayana, Lord Rama\'s 14 year exile with Sita and Lakshman. Colorful motifs of flowers and birds set the enchanting backdrop of the forest, defining the significance of beautiful life no matter the circumstances.',
-    medium: 'Mithila Folk Art',
+    medium: 'Mithila Folk Art, acrylic on handmade canvas/paper',
   },
 ];
 
