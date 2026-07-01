@@ -26,7 +26,7 @@ const CornerOrnament: React.FC<{ className: string }> = ({ className }) => (
 const ExhibitionsGallery: React.FC = () => {
   return (
     <section className="relative py-28 md:py-44 bg-gradient-to-b from-cream-dark to-cream overflow-hidden">
-      <div className="absolute inset-0 rangoli-bg opacity-30" />
+      <div className="absolute inset-0 rangoli-bg opacity-30 pointer-events-none" />
 
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-madhubani-teal via-madhubani-magenta to-madhubani-red opacity-15" />
       <div className="absolute right-0 top-0 bottom-0 w-1 bg-gradient-to-b from-madhubani-red via-madhubani-magenta to-madhubani-teal opacity-15" />

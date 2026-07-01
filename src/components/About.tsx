@@ -38,7 +38,7 @@ const About: React.FC = () => {
   return (
     <section id="about" className="relative py-20 md:py-32 bg-cream overflow-hidden">
       {/* Background pattern */}
-      <div className="absolute inset-0 rangoli-bg opacity-50" />
+      <div className="absolute inset-0 rangoli-bg opacity-50 pointer-events-none" />
       
       {/* Decorative side borders */}
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-madhubani-red via-madhubani-magenta to-madhubani-teal opacity-15" />

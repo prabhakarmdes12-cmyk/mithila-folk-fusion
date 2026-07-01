@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="relative py-28 md:py-44 bg-cream-dark overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 rangoli-bg" />
+      <div className="absolute inset-0 rangoli-bg pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section title */}
@@ -87,6 +87,8 @@ const Contact: React.FC = () => {
                   <a
                     key={social.label}
                     href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-12 h-12 border border-madhubani-red/30 flex items-center justify-center text-madhubani-red hover:bg-madhubani-red hover:text-cream transition-all duration-300"
                     aria-label={social.label}
                   >
