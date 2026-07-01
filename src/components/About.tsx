@@ -231,7 +231,6 @@ const About: React.FC = () => {
                           <p className="font-cormorant text-sm md:text-base text-madhubani-teal mt-1">{item.detail}</p>
                         </div>
                         <p className="font-cormorant text-sm md:text-base text-madhubani-black/60 leading-relaxed max-w-xs">{item.desc}</p>
-                        <span className="font-cormorant text-xs text-madhubani-red/40 tracking-wider uppercase">Hover to flip</span>
                       </div>
                       <div className="flip-card-back absolute inset-0 bg-madhubani-red text-cream p-6 md:p-8 flex flex-col items-center justify-center text-center gap-3">
                         <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-madhubani-yellow via-cream to-madhubani-yellow opacity-60" />
@@ -286,7 +285,6 @@ const About: React.FC = () => {
                           <p className="font-cormorant text-xs md:text-sm text-madhubani-teal mt-0.5">{item.detail}</p>
                         </div>
                         <p className="font-cormorant text-xs md:text-sm text-madhubani-black/60 leading-relaxed line-clamp-3">{item.desc}</p>
-                        <span className="font-cormorant text-[10px] md:text-xs text-madhubani-red/40 tracking-wider uppercase">Hover to flip</span>
                       </div>
                       <div className="flip-card-back absolute inset-0 bg-madhubani-red text-cream p-4 md:p-5 flex flex-col items-center justify-center text-center gap-2">
                         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-madhubani-yellow via-cream to-madhubani-yellow opacity-60" />
