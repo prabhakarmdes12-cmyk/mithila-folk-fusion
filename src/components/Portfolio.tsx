@@ -63,6 +63,42 @@ const portfolioWorks = [
     medium: 'Mithila Folk Art, acrylic on handmade canvas/paper',
     dimensions: '',
   },
+  {
+    id: 7,
+    src: '/images/Prem-Vatika.webp',
+    title: 'Prem Vatika',
+    category: 'Mythology & Folklore',
+    description: 'Prem Vatika (Garden of Love) is a Mithila folk painting that captures the eternal Raas Leela of Lord Krishna with the gopis in the moonlit groves of Vrindavan. The composition is a celebration of divine love, where Krishna multiplies himself to dance with each gopi simultaneously, embodying the soul\'s longing for union with the infinite.\n\nAt the heart of the painting, Krishna stands with his flute, his form radiant against the night sky. The gopis encircle him in rhythmic motion, their anklets keeping time with an unseen melody. Flowering vines, peacocks, and blooming lotuses transform the forest into a sacred garden where heaven and earth meet. Traditional Mithila motifs — fish, birds, and geometric patterns — frame the scene with intricate precision, each carrying layers of symbolic meaning.\n\nThe circular composition mirrors the cosmic dance of creation and dissolution, reminding the viewer that love is both the path and the destination. Through fine nib work and vibrant natural pigments, Prem Vatika invites contemplation on devotion, unity, and the transcendent power of love that moves through all of existence.',
+    medium: 'Nib work with Acrylic on Handmade Paper',
+    dimensions: '',
+  },
+  {
+    id: 8,
+    src: '/images/The-Invisible-Pull.webp',
+    title: 'The Invisible Pull',
+    category: 'Nature & Community',
+    description: 'The Invisible Pull is a Mithila folk painting that explores the subtle yet powerful forces that bind beings together. Two elephants stand beneath a Kadamb tree, their trunks intertwined in a gesture that speaks across species — a language of trust, recognition, and quiet devotion.\n\nThe elephants, rendered in bold Godna-inspired linework, are adorned with traditional motifs that mark them as sacred beings. Their eyes meet in a gaze that holds centuries of wisdom. The Kadamb tree spreads its canopy above them, its leaves and flowers forming a protective embrace. In Indian tradition, the Kadamb is associated with Krishna\'s childhood, symbolizing shelter, play, and the innocence of pure connection.\n\nThe intertwining trunks become a visual metaphor for the invisible threads that run through all relationships — the pull between parent and child, friend and friend, lover and beloved, human and nature. Floral borders and auspicious symbols frame the composition, grounding the painting in the vocabulary of Mithila folk art. The work invites the viewer to reflect on the forces that draw us together, the trust that holds us steady, and the quiet strength found in connection.',
+    medium: 'Nib work with Acrylic on Handmade Paper',
+    dimensions: '',
+  },
+  {
+    id: 9,
+    src: '/images/Aarambh.webp',
+    title: 'Aarambh',
+    category: 'Mythology & Heritage',
+    description: 'Aarambh (The Beginning) captures the timeless moment of a bride\'s journey to her new home through the traditional Doli Kahaar ritual. The palanquin bearers carry the doli with rhythmic grace, their steps measured and steady, as the veiled bride embarks on the threshold of a new chapter in her life.\n\nThe painting is rich with the symbolism of transition and blessing. Fish motifs swim through the borders, representing fertility and abundance. Blooming lotuses rise from the waters, signifying purity and new beginnings. Birds take flight across the sky, heralding the dawn of a new journey. Every element is a prayer woven in pigment — for the bride\'s happiness, for the union of two families, for the continuity of tradition.\n\nThe Doli Kahaar scene is more than a ritual; it is a celebration of community, where neighbors and loved ones come together to bless the departing bride. Their faces, rendered in the stylized vocabulary of Mithila art, carry the warmth of shared joy. The landscape behind them — dotted with flowering trees, flowing rivers, and auspicious symbols — reflects the rich cultural tapestry of Mithila\'s wedding traditions.\n\nAarambh is a visual blessing, honoring the journey of love, the courage of new beginnings, and the enduring beauty of cultural ritual. Through fine nib work and vibrant natural pigments, the painting invites the viewer to witness the sacred moment when one chapter ends and another begins.',
+    medium: 'Nib work with Acrylic on Handmade Paper',
+    dimensions: '',
+  },
+  {
+    id: 10,
+    src: '/images/Manthan.webp',
+    title: 'Manthan',
+    category: 'Mythology & Folklore',
+    description: 'A profound visual narrative of the Samudra Manthan, or the Churning of the Ocean, a foundational cosmic event in Hindu mythology. The composition is masterfully circular and layered, drawing the viewer into a meditative diagram that functions much like a Yantra or a cosmic map.\n\nCompositional Elements. The Core: At the center of the work sits a deity, likely Lord Vishnu, who serves as the stabilizer and overseer of the entire cosmic process. The Churning: A large, circular band encircles the central deity, representing the churning motion itself. Within this ring, stylized figures of the Devas (gods) and Asuras (demons) are arranged in harmonious collaboration to rotate the cosmic mountain. The Foundation: The weight of this cosmic activity is anchored at the bottom of the circle by Kurma, the tortoise avatar of Lord Vishnu. The Ratnas: The upper section of the piece features a series of circular vignettes, each showcasing a unique ratna (treasure) or divine entity that emerged from the ocean, including cosmic symbols, vessels, and animals. The Ocean: The background and foreground are meticulously filled with fine, rhythmic line-work, creating a textured representation of the turbulent, fish-filled waters.\n\nThis piece utilizes the traditional Mithila "fill-in" style, known as the bharni technique, ensuring no space remains empty. This dense application of ink serves a thematic purpose, as the artist organizes the inherent chaos of the ocean\'s churning into perfect, repeating geometry, illustrating how cosmic order emerges from intense effort and movement.\n\nBy positioning the deity at the center of the revolving ring, the artist emphasizes the balance between the forces of light and dark, suggesting that while the Devas and Asuras perform the work, a divine, unwavering center point maintains the cosmic equilibrium. The intricate hatching and cross-hatching throughout the work act as a metaphor for the waves, imbuing the static image with a sense of eternal motion. Ultimately, this work is an act of devotion, reflecting the artist\'s patience and spiritual commitment to the Manthan narrative while honoring the ancient traditions and sophisticated linear geometry of the Mithila region.',
+    medium: 'Nib work with Acrylic on Handmade Paper',
+    dimensions: '',
+  },
 ];
 
 const CornerOrnament: React.FC<{ className: string }> = ({ className }) => (
