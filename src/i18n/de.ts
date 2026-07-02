@@ -126,6 +126,12 @@ const de: Record<string, any> = {
     description: 'Zehn originale Mithila-Gemälde, die Mythologie, Klima und Identität umspannen. Jedes von Hand auf handgeschöpftem Papier mit feiner Federpräzision und natürlichen Pigmenten gemalt',
     clickHint: 'Zum Vollbildmodus klicken',
     medium: 'Medium:',
+    art1Title: 'Resonanz',
+    art2Title: 'Bodhi Udaya',
+    art3Title: 'Mythokreis',
+    art4Title: 'Echos unter den Zweigen',
+    art5Title: 'Eine Erde, viele Stimmen',
+    art6Title: 'Echos des Exils',
   },
   portfolioLightbox: {
     inquireAbout: 'Anfrage zu diesem Stück',
