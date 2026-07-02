@@ -168,16 +168,18 @@ const Portfolio: React.FC = () => {
 
                   {/* Decorative frame around the painting */}
                   <div className="-m-4 md:-m-8 lg:-m-12 mb-10">
-                    <div className="border-2 border-madhubani-red/30 shadow-lg shadow-madhubani-red/5 overflow-hidden flex items-center justify-center p-[5%]">
-                      <CameraShy mode="blur" blur="20px" sensitivity="balanced">
-                        <img
-                          src={work.src}
-                          alt={work.title}
-                          draggable="false"
-                          onDragStart={(e) => e.preventDefault()}
-                          className="w-full max-h-[72vh] object-contain block select-none transition-all duration-700 grayscale hover:grayscale-0"
-                        />
-                      </CameraShy>
+                    <div className="flex items-center justify-center p-[10px]">
+                      <div className="border-2 border-madhubani-red/30 shadow-lg shadow-madhubani-red/5 overflow-hidden">
+                        <CameraShy mode="blur" blur="20px" sensitivity="balanced">
+                          <img
+                            src={work.src}
+                            alt={work.title}
+                            draggable="false"
+                            onDragStart={(e) => e.preventDefault()}
+                            className="w-full max-h-[72vh] object-contain block select-none transition-all duration-700 grayscale hover:grayscale-0"
+                          />
+                        </CameraShy>
+                      </div>
                     </div>
                   </div>
 
