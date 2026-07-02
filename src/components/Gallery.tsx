@@ -268,7 +268,7 @@ const Gallery: React.FC = () => {
                     <CornerOrnament className="bottom-2 right-2 scale-[-1]" />
 
                     {/* Inner image frame */}
-                    <div className="relative overflow-hidden border border-madhubani-red/10 m-2 mb-6">
+                    <div className="relative overflow-hidden border border-madhubani-red/10 m-2 mb-6 flex items-center justify-center">
                       <CameraShy mode="blur" blur="20px" sensitivity="balanced">
                       <img
                         src={artwork.src}
@@ -362,7 +362,7 @@ const Gallery: React.FC = () => {
                 transition={{ delay: i * 0.15 }}
                 className="relative group"
               >
-                <div className="relative overflow-hidden border border-madhubani-red/10">
+                <div className="relative overflow-hidden border border-madhubani-red/10 flex items-center justify-center">
                   <CameraShy mode="blur" blur="20px" sensitivity="balanced">
                   <img
                     src={item.src}

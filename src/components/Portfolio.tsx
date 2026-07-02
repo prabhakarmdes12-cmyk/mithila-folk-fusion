@@ -175,7 +175,7 @@ const Portfolio: React.FC = () => {
                           alt={work.title}
                           draggable="false"
                           onDragStart={(e) => e.preventDefault()}
-                          className="w-auto mx-auto h-auto max-h-[100dvh] select-none transition-all duration-700 grayscale hover:grayscale-0 group-hover:scale-[1.02]"
+                          className="w-auto mx-auto h-auto max-h-[100dvh] max-w-full select-none transition-all duration-700 grayscale hover:grayscale-0 group-hover:scale-[1.02]"
                         />
                       </CameraShy>
                     </div>
