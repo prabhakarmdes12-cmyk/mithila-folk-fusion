@@ -168,7 +168,7 @@ const Portfolio: React.FC = () => {
 
                   {/* Decorative inset border around the painting area */}
                   <div className="relative -inset-4 border-2 border-madhubani-red/10 p-1 mb-10">
-                    <div className="border border-madhubani-red/20">
+                    <div className="border border-madhubani-red/20 flex items-center justify-center">
                       <CameraShy mode="blur" blur="20px" sensitivity="balanced">
                         <img
                           src={work.src}

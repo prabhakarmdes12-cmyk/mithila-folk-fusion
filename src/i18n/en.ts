@@ -136,7 +136,7 @@ const en = {
     sectionLabel: 'Portfolio',
     headingPrefix: 'Full ',
     headingHighlight: 'Collection',
-    description: 'Six original Mithila paintings spanning mythology, climate, and identity. Each one hand painted on handmade paper with fine nib precision and natural pigments',
+    description: 'Ten original Mithila paintings spanning mythology, climate, and identity. Each one hand painted on handmade paper with fine nib precision and natural pigments',
     clickHint: 'Click to view full screen',
     medium: 'Medium:',
     // Full descriptions

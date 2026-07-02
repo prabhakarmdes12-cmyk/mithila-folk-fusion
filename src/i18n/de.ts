@@ -123,7 +123,7 @@ const de: Record<string, any> = {
     sectionLabel: 'Portfolio',
     headingPrefix: 'Vollständige ',
     headingHighlight: 'Sammlung',
-    description: 'Sechs originale Mithila-Gemälde, die Mythologie, Klima und Identität umspannen. Jedes von Hand auf handgeschöpftem Papier mit feiner Federpräzision und natürlichen Pigmenten gemalt',
+    description: 'Zehn originale Mithila-Gemälde, die Mythologie, Klima und Identität umspannen. Jedes von Hand auf handgeschöpftem Papier mit feiner Federpräzision und natürlichen Pigmenten gemalt',
     clickHint: 'Zum Vollbildmodus klicken',
     medium: 'Medium:',
   },
